@@ -28,6 +28,6 @@ module.exports = function (Homework) {
             i = await addPromise(i, 1);
         }
     
-        cb(res);
+        cb(acc);
     }
 }
