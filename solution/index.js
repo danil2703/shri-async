@@ -18,7 +18,7 @@ module.exports = function (Homework) {
     
         let length = await lengthPromise();
     
-        let acc = initialValue;
+        let acc = initialValue || 0;
         
         let i = 0;
     
