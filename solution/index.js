@@ -9,7 +9,7 @@ module.exports = function (Homework) {
         }
     }
 
-    return (array, fn, initialValue, cb) => {
+    return async (array, fn, initialValue, cb) => {
         const lengthPromise = promisify(array.length);
         const fnPromise = promisify(fn);
         const getPromise = promisify(array.get);
